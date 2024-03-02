@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	5.249.0
+%define		kdeframever	6.0
 %define		qtver		5.15.2
 %define		kfname		ktexteditor
 
 Summary:	Full text editor component
 Name:		kf6-%{kfname}
-Version:	5.249.0
-Release:	0.1
+Version:	6.0.0
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
-Source0:	https://download.kde.org/unstable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	001cd5373077133fc4cb090a54e86f78
+Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
+# Source0-md5:	81ecc55af1cb0a0f13f1fc3860eb61d6
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
@@ -129,6 +129,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kdevappwizard/templates/ktexteditor6-plugin.tar.bz2
 %{_datadir}/qlogging-categories6/ktexteditor.categories
 %{_datadir}/qlogging-categories6/ktexteditor.renamecategories
+%{_datadir}/polkit-1/actions/org.kde.ktexteditor6.katetextbuffer.policy
 
 %files devel
 %defattr(644,root,root,755)
