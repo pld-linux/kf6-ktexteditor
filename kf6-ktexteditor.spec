@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.4
+%define		kdeframever	6.5
 %define		qtver		5.15.2
 %define		kfname		ktexteditor
 
 Summary:	Full text editor component
 Name:		kf6-%{kfname}
-Version:	6.4.0
-Release:	2
+Version:	6.5.0
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	6dcb0397637daa41a18a7e3d0895a765
+# Source0-md5:	fbe2608ded4b47a1e7974c92d458596a
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
