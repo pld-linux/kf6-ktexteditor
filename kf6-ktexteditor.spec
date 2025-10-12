@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		ktexteditor
 
 Summary:	Full text editor component
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	27269b25f05738496d8c02e298639c73
+# Source0-md5:	f9115c3f0db492c65314464d0e36e20b
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
@@ -125,8 +125,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.md
 %attr(755,root,root) %{_bindir}/ktexteditor-script-tester6
 %ghost %{_libdir}/libKF6TextEditor.so.6
-%attr(755,root,root) %{_libdir}/libKF6TextEditor.so.*.*
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/parts/katepart.so
+%{_libdir}/libKF6TextEditor.so.*.*
+%{_libdir}/qt6/plugins/kf6/parts/katepart.so
 %attr(755,root,root) %{_prefix}/libexec/kf6/kauth/kauth_ktexteditor_helper
 %{_datadir}/dbus-1/system-services/org.kde.ktexteditor6.katetextbuffer.service
 %{_datadir}/dbus-1/system.d/org.kde.ktexteditor6.katetextbuffer.conf
