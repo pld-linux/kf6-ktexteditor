@@ -75,6 +75,16 @@ highlighting and automatic indentation to advanced scripting support,
 making it suitable for everything from a simple embedded text-file
 editor to an advanced IDE.
 
+%description -l pl.UTF-8
+KTextEditor dostarcza potężny komponent edytora tekstowego, który
+możesz zagnieździć w swojej aplikacji, albo jako KPart, albo używając
+biblioteki KF6::TextEditor (jeśli potrzebujesz więcej kontroli).
+
+Komponent edytora zawiera wiele przydatnych funkcjnalności, takich jak
+podświetlanie składni, automatyczne wcięcia, zaawansowane wsparcie dla
+skryptowania, czyniąc go przydatnym do wszystkiego od prostego
+zagnieżdżonego edytora tekstu do zaawansowanego IDE.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
